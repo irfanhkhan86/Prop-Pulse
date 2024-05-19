@@ -1,5 +1,8 @@
-import "@/assets/styles/globals.css";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 import React from "react";
+import "@/assets/styles/globals.css";
+
 export const metadata = {
     title: "propertyPulse | Find the perfect rental",
     description: "Find your dream rental property",
@@ -10,7 +13,9 @@ const MainLayout = ({ children }) => {
   return (
     <html lang="en">
       <body>
-        <div>{children}</div>
+        <Navbar />
+        <main>{children}</main>
+        <Footer />
       </body>
     </html>
   );
